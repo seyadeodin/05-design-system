@@ -25,9 +25,3 @@ export const CustomTag: StoryObj<HeadingProps> = {
     },
   },
 }
-
-// export const Big: StoryObj<ButtonProps> = {
-//   args: {
-//     size: 'big',
-//   },
-// }

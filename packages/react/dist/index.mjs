@@ -106,6 +106,7 @@ var Box = styled("div", {
   backgroundColor: "$gray800",
   border: "1px solid $gray600"
 });
+Box.displayName = "Box";
 
 // src/components/Text.tsx
 import { styled as styled2 } from "@stitches/react";
@@ -135,6 +136,7 @@ var Text = styled2("p", {
     size: "md"
   }
 });
+Text.displayName = "Text";
 
 // src/components/Heading.tsx
 import { styled as styled3 } from "@stitches/react";
@@ -159,6 +161,7 @@ var Heading = styled3("h2", {
     size: "md"
   }
 });
+Heading.displayName = "Heading";
 
 // src/components/Avatar/styles.ts
 import * as Avatar from "@radix-ui/react-avatar";
@@ -205,6 +208,7 @@ function Avatar2(props) {
     ]
   });
 }
+Avatar2.displayName = "Avatar";
 
 // src/components/Button.tsx
 var Button = styled("button", {
@@ -277,6 +281,7 @@ var Button = styled("button", {
     size: "md"
   }
 });
+Button.displayName = "Button";
 
 // src/components/TextInput/styles.ts
 var TextInputContainer = styled("div", {
@@ -334,6 +339,7 @@ function TextInput({ prefix, ...props }) {
     ]
   });
 }
+TextInput.displayName = "TextInput";
 
 // src/components/TextArea.tsx
 var TextArea = styled("textarea", {
@@ -360,6 +366,7 @@ var TextArea = styled("textarea", {
     background: "$gray400"
   }
 });
+TextArea.displayName = "TextArea";
 
 // src/components/Checkbox/index.tsx
 import { Check } from "phosphor-react";
@@ -429,6 +436,7 @@ function Checkbox2({ ...props }) {
     })
   });
 }
+Checkbox2.displayName = "Checkbox";
 
 // src/components/MultiStep/styles.ts
 var MultiStepContainer = styled("div", {});
@@ -479,6 +487,7 @@ function MultiStep({ size, currentStep = 1 }) {
     ]
   });
 }
+MultiStep.displayName = "MultiStep";
 export {
   Avatar2 as Avatar,
   Box,

@@ -17,13 +17,13 @@ jobs:
         with:
           node-version: 16
           cache: 'npm'
-          cache-dependenct-path: '**/package-lock.json'
+          cache-dependency-path: '**/package-lock.json'
 
       - run: npm ci
 
       - run: npm run build
         env: 
-          TURBO_TOKEN: sZOGaLHGd4T9oboekV8oKnu1
+          TURBO_TOKEN: VqKrpAvQxjYO9Pe4pA9fxw5l
           TURBO_TEAM: run-to-the-woods
 
       - name: Deploy storybook

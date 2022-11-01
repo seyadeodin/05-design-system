@@ -1,0 +1,2 @@
+import{A as t}from"./index.77454044.js";import"./index.6a0a28f3.js";import"./iframe.520c4b52.js";import"./index.908e67ad.js";import"./jsx-runtime.125a8685.js";const c={title:"Data display/Avatar",component:t,args:{src:"https://github.com/seyadeodin.png",alt:"Lucas Andrade"},argTypes:{src:{control:{type:"text"}}}},e={},p={args:{src:void 0}},m=["Primary","withFallback"];export{e as Primary,m as __namedExportsOrder,c as default,p as withFallback};
+//# sourceMappingURL=Avatar.stories.d155caa7.js.map

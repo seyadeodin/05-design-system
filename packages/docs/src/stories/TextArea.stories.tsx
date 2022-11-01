@@ -31,9 +31,3 @@ export const Disabled: StoryObj<TextAreaProps> = {
     disabled: true,
   },
 }
-
-// export const Big: StoryObj<ButtonProps> = {
-//   args: {
-//     size: 'big',
-//   },
-// }

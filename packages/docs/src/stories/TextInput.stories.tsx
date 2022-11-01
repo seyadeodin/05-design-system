@@ -39,9 +39,3 @@ export const Disabled: StoryObj<TextInputProps> = {
     disabled: true,
   },
 }
-
-// export const Big: StoryObj<ButtonProps> = {
-//   args: {
-//     size: 'big',
-//   },
-// }

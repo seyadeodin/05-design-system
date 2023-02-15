@@ -22,7 +22,7 @@ export const CheckboxContainer = styled(Checkbox.Root, {
   },
   // radix allow us to change a checklist style according to its state
 
-  '&:focus': {
+  '&:focus, &[data-state="checked"]': {
     border: '2px solid $ignite300',
   },
 })

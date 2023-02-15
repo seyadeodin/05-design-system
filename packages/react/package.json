@@ -1,6 +1,6 @@
 {
   "name": "@run-to-the-woods/react",
-  "version": "1.0.2",
+  "version": "2.1.5",
   "description": "",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",

@@ -334,6 +334,9 @@ var Button = styled("button", {
 });
 Button.displayName = "Button";
 
+// src/components/TextInput/index.tsx
+var import_react4 = require("react");
+
 // src/components/TextInput/styles.ts
 var TextInputContainer = styled("div", {
   backgroundColor: "$gray900",
@@ -390,19 +393,21 @@ var Input = styled("input", {
 
 // src/components/TextInput/index.tsx
 var import_jsx_runtime2 = require("react/jsx-runtime");
-function TextInput({ prefix, size, ...props }) {
-  return /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)(TextInputContainer, {
-    size,
-    children: [
-      !!prefix && /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(Prefix, {
-        children: prefix
-      }),
-      /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(Input, {
-        ...props
-      })
-    ]
-  });
-}
+var TextInput = (0, import_react4.forwardRef)(
+  ({ prefix, ...props }, ref) => {
+    return /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)(TextInputContainer, {
+      children: [
+        !!prefix && /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(Prefix, {
+          children: prefix
+        }),
+        /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(Input, {
+          ref,
+          ...props
+        })
+      ]
+    });
+  }
+);
 TextInput.displayName = "TextInput";
 
 // src/components/TextArea.tsx
@@ -437,7 +442,7 @@ var import_phosphor_react2 = require("phosphor-react");
 
 // src/components/Checkbox/style.ts
 var Checkbox = __toESM(require("@radix-ui/react-checkbox"));
-var import_react4 = require("@stitches/react");
+var import_react5 = require("@stitches/react");
 var CheckboxContainer = styled(Checkbox.Root, {
   all: "unset",
   width: "$6",
@@ -459,7 +464,7 @@ var CheckboxContainer = styled(Checkbox.Root, {
     border: "2px solid $ignite300"
   }
 });
-var slideIn = (0, import_react4.keyframes)({
+var slideIn = (0, import_react5.keyframes)({
   from: {
     transform: "translateY(-100%)"
   },
@@ -467,7 +472,7 @@ var slideIn = (0, import_react4.keyframes)({
     transform: "translateY(0)"
   }
 });
-var slideOut = (0, import_react4.keyframes)({
+var slideOut = (0, import_react5.keyframes)({
   from: {
     transform: "translateY(0)"
   },
@@ -489,7 +494,7 @@ var CheckboxIndicator = styled(Checkbox.Indicator, {
 
 // src/components/Checkbox/index.tsx
 var import_jsx_runtime3 = require("react/jsx-runtime");
-function Checkbox2({ ...props }) {
+function Checkbox2(props) {
   return /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(CheckboxContainer, {
     ...props,
     children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(CheckboxIndicator, {

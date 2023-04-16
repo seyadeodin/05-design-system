@@ -1,5 +1,17 @@
 # @run-to-the-woods/react
 
+## 2.4.0
+
+### Minor Changes
+
+- Add correct types to avatar and checkbox.
+
+## 2.3.0
+
+### Minor Changes
+
+- Fix input component.
+
 ## 2.2.1
 
 ### Patch Changes

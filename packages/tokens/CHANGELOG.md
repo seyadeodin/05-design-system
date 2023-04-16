@@ -1,5 +1,11 @@
 # @run-to-the-woods/tokens
 
+## 1.2.0
+
+### Minor Changes
+
+- Add correct types to avatar and checkbox.
+
 ## 1.1.1
 
 ### Patch Changes
